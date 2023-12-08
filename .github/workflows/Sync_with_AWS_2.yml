@@ -1,0 +1,29 @@
+name: sync up to codecommit
+on:
+  push:
+    tags-ignore:
+      - '*'
+    branches:
+      - main
+
+jobs:
+  sync:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@main
+        with:
+           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+           aws-region: eu-west-3
+
+      - name: Sync up to codeCommit
+        uses: Sougatd/Sync_Git_To_AWS@main
+        with:
+          repository_name: DevOps_Test_Repo
+          aws_region: eu-west-3
