@@ -1,5 +1,5 @@
 name: Github to AWS codecommit Sync
-description: Synchronize from Github to codecommit via Github Actions using IAM credentials.
+description: 'Synchronize from Github to codecommit via Github Actions using IAM credentials.'
 author: 'Sougatd'
 branding:
   icon: terminal
@@ -7,7 +7,7 @@ branding:
 inputs:
   repository_name:  DevOps_Test_Repo
     ##description: CodeCommit repository name.
-    required: true
+  required: true
   aws_region: eu-west-3
     description: Region of the CodeComit Repository
     required: true
