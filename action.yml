@@ -5,7 +5,7 @@ branding:
   icon: terminal
   color: yellow
 inputs:
-  repository_name:  DevOps_Test_Repo
+  repository_name: DevOps_Test_Repo
       ##description: CodeCommit repository name.
   required: true
 aws_region: eu-west-3
