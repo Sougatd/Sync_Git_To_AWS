@@ -6,11 +6,11 @@ branding:
   color: yellow
 inputs:
   repository_name:
-      ##description: CodeCommit repository name.
-  required: true
+    description: CodeCommit repository name.
+    required: true
   aws_region: 
-  ##description: Region of the CodeComit Repository
-  required: true
+    description: Region of the CodeComit Repository
+    required: true
 runs:
   using: 'docker'
   image: './Dockerfile'
