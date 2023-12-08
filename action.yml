@@ -6,7 +6,7 @@ branding:
   color: yellow
 inputs:
   repository_name:  DevOps_Test_Repo
-    description: CodeCommit repository name.
+    ##description: CodeCommit repository name.
     required: true
   aws_region: eu-west-3
     description: Region of the CodeComit Repository
