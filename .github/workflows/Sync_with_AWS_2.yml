@@ -4,7 +4,7 @@ on:
     tags-ignore:
       - '*'
     branches:
-      - main1
+      - main
 
 jobs:
   sync:
