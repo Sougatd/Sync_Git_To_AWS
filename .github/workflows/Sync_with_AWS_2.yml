@@ -23,7 +23,7 @@ jobs:
            aws-region: eu-west-3
 
       - name: Sync up to codeCommit
-        uses: Sougatd/Sync_Git_To_AWS@main
+        uses: Sougatd/Sync_Git_To_AWS@main3
         with:
           repository_name: DevOps_Test_Repo
           aws_region: eu-west-3
