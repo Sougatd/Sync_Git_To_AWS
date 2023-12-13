@@ -1,8 +1,9 @@
 version: 0.0
 os: windows
 files:
-  - source: \
+  - source: \*.html
     destination: C:\inetpub\wwwroot
+    file_exists_behavior: OVERWRITE
 #hooks:
  # BeforeInstall:
    # - location: scripts/install_dependencies.sh
